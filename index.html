@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <title>Пробелы</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+	<body>
+        <div class="spaces-header">
+            <h1>
+                Пробелы
+            </h1>
+            <p>
+                и символы нулевой ширины, с копированием в буфер по клику, короткими мнемониками и&nbsp;аннотациями о применении.
+            </p>
+        </div>
+        <div class="spaces-table">
+                <div style="grid-column-start: 1; grid-column-end: 3;" class="spaces-table_head ">
+                    → Неразрывность<span class="w768">,&nbsp;мнемоника</span>
+                </div>
+                <div class="spaces-table_col-3 spaces-table_head w768-1024">
+                    HTML<span class=" w768">,&nbsp;мобдев</span>
+                </div>
+                <div class="spaces-table_col-4 spaces-table_head w920-1024">
+                    Мнемоника
+                </div>
+                <div class="spaces-table_col-5-6 spaces-table_head w920">
+                    Мобдев
+                </div>
+                <div class="spaces-table_col-5-6 spaces-table_head w1024">
+                    АйОС&nbsp;и&nbsp;Андройд
+                </div>
+
+
+                <div class="category nogap">
+                    С нулевой шириной
+                </div>
+
+                <div class="spaces-table_col-2">
+                    <button class="copy" onclick="copyToClipboard('#st1')">Zero Width <strong id="st1">&#8203;</strong>Space</button>
+                </div>
+                <div class="spaces-table_col-3" id="td2">
+                    <button class="copy" onclick="copyToClipboard('#td2')">&<span>#8203;</span></button>
+                </div>
+                <div class="spaces-table_col-5" id="td2u">
+                    <button class="copy" onclick="copyToClipboard('#td2u')">\u200B</button>
+                </div>
+                <div class="spaces-table_col-6">
+                    При выравнивании по&nbsp;ширине растягивается, как другие пробелы. В&nbsp;языках без пробелов отмечает границы слов.
+                </div>
+
+
+                <div class="spaces-table_col-1">→</div>
+                <div class="spaces-table_col-2">
+                    <button class="copy" onclick="copyToClipboard('#st1')">Word <strong id="st19">&#8288;</strong>Joiner</button>
+                </div>
+                <div class="spaces-table_col-3" id="td1">
+                    <button class="copy" onclick="copyToClipboard('#td1')">&<span>#8288;</span></button>
+                </div>
+                <div class="spaces-table_col-4" id="td1m">
+                    <button class="copy" onclick="copyToClipboard('#td1m')">&<span>NoBreak;</span></button>
+                </div>
+                <div class="spaces-table_col-5" id="td1u">
+                    <button class="copy" onclick="copyToClipboard('#td1u')">\u2060</button>
+                </div>
+                <div class="spaces-table_col-6">
+                    Запрещает разрыв строки, не&nbsp;добавляя пустого пространства. Не&nbsp;пробел, но&nbsp;для поиска, парсинга, сортировки и&nbsp;пр. определяет границы слов.
+                </div>
+
+
+                <div class="category">
+                    Классика
+                </div>
+
+                <div class="spaces-table_col-2">
+                    <button class="copy" onclick="copyToClipboard('#st3')">Hair<strong id="st3">&#8202;</strong>Space</button>
+                </div>
+                <div class="spaces-table_col-3" id="td3">
+                    <button class="copy" onclick="copyToClipboard('#td3')">&<span>#8202;</span></button>
+                </div>
+                <div class="spaces-table_col-4" id="td3m">
+                    <button class="copy" onclick="copyToClipboard('#td3m')">&<span>hairsp;</span></button>
+                </div>
+                <div class="spaces-table_col-5" id="td3u">
+                    <button class="copy" onclick="copyToClipboard('#td3u')">\u200A</button>
+                </div>
+                <div class="spaces-table_col-6">
+                    Пробел минимальной ширины.
+                </div>
+
+                <div class="spaces-table_col-2">
+                    <button class="copy" onclick="copyToClipboard('#st4')">Thin<strong id="st4">&#8201;</strong>Space</button>
+                </div>
+                <div class="spaces-table_col-3" id="td4">
+                    <button class="copy" onclick="copyToClipboard('#td4')">&<span>#8201;</span></button>
+                </div>
+                <div class="spaces-table_col-4" id="td4m">
+                    <button class="copy" onclick="copyToClipboard('#td5m')">&<span>thinsp;</span></button>
+                </div>
+                <div class="spaces-table_col-5" id="td4u">
+                    <button class="copy" onclick="copyToClipboard('#td4u')">\u2009</button>
+                </div>
+                <div class="spaces-table_col-6">
+                    Обычно в&nbsp;1/5&nbsp;кегля, реже&nbsp;&mdash; в&nbsp;1/6.
+                </div>
+
+                <div class="spaces-table_col-1">→</div>
+                <div class="spaces-table_col-2">
+                    <button class="copy" onclick="copyToClipboard('#st5')">Narrow No-break<strong id="st5">&#8239;</strong>Space</button>
+                </div>
+                <div class="spaces-table_col-3" id="td5">
+                    <button class="copy" onclick="copyToClipboard('#td5')">&<span>#8239;</span></button>
+                </div>
+
+                <div class="spaces-table_col-5" id="td5u">
+                    <button class="copy" onclick="copyToClipboard('#td5u')">\u202F</button>
+                </div>
+                <div class="spaces-table_col-6">
+                    Зауженный, часто схож с&nbsp;&laquo;Thin Space&raquo;. Не&nbsp;отображается в&nbsp;Сафари, поэтому <a href="https://stackoverflow.com/questions/595365/how-to-render-narrow-non-breaking-spaces-in-html-for-windows"> выкручиваются</a>.
+                </div>
+
+                <div class="spaces-table_col-2">
+                    <button class="copy" onclick="copyToClipboard('#st6')">Normal<strong id="st6">&#32;</strong>Space</button>
+                </div>
+                <div class="spaces-table_col-3" id="td6">
+                    <button class="copy" onclick="copyToClipboard('#td6')">&<span>#32;</span></button>
+                </div>
+
+                <div class="spaces-table_col-5" id="td6u">
+                    <button class="copy" onclick="copyToClipboard('#td6u')">\u0020</button>
+                </div>
+                <div class="spaces-table_col-6">
+                    Обычный пробел, вводится клавишей &laquo;Space&raquo;.
+                </div>
+
+                <div class="spaces-table_col-1">→</div>
+                <div class="spaces-table_col-2">
+                    <button class="copy" onclick="copyToClipboard('#st7')">No-break<strong id="st7">&#160;</strong>Space</button>
+                </div>
+                <div class="spaces-table_col-3" id="td7">
+                    <button class="copy" onclick="copyToClipboard('#td7')">&<span>#160;</span></button>
+                </div>
+                <div class="spaces-table_col-4" id="td7m">
+                    <button class="copy" onclick="copyToClipboard('#td7m')">&<span>nbsp;</span></button>
+                </div>
+                <div class="spaces-table_col-5" id="td7u">
+                    <button class="copy" onclick="copyToClipboard('#td7u')">\u00A0</button>
+                </div>
+                <div class="spaces-table_col-6">
+                    Шириной с&nbsp;обычный пробел.
+                </div>
+
+
+                <div class="category">
+                    Кратные кеглю
+                </div>
+
+                <div class="spaces-table_col-2">
+                    <button class="copy" onclick="copyToClipboard('#st8')">Six-per-em<strong id="st8">&#8198;</strong>Space</button>
+                </div>
+                <div class="spaces-table_col-3" id="td8">
+                    <button class="copy" onclick="copyToClipboard('#td8')">&<span>#8198;</span></button>
+                </div>
+
+                <div class="spaces-table_col-5" id="td8u">
+                    <button class="copy" onclick="copyToClipboard('#td8u')">\u2006</button>
+                </div>
+                <div class="spaces-table_col-6">
+                    1/6 кегля.
+                </div>
+
+                <div class="spaces-table_col-2">
+                    <button class="copy" onclick="copyToClipboard('#st9')">Four-per-em<strong id="st9">&#8197;</strong>Space</button>
+                </div>
+                <div class="spaces-table_col-3" id="td9">
+                    <button class="copy" onclick="copyToClipboard('#td9')">&<span>#8197;</span></button>
+                </div>
+                <div class="spaces-table_col-4" id="td9m">
+                    <button class="copy" onclick="copyToClipboard('#td9m')">&<span>emsp14;</span></button>
+                </div>
+                <div class="spaces-table_col-5" id="td9u">
+                    <button class="copy" onclick="copyToClipboard('#td9u')">\u2005</button>
+                </div>
+                <div class="spaces-table_col-6">
+                    1/4 кегля.
+                </div>
+
+                <div class="spaces-table_col-2">
+                    <button class="copy" onclick="copyToClipboard('#st10')">Three-per-em<strong id="st10">&#8196;</strong>Space</button>
+                </div>
+                <div class="spaces-table_col-3" id="td10">
+                    <button class="copy" onclick="copyToClipboard('#td10')">&<span>#8196;</span></button>
+                </div>
+                <div class="spaces-table_col-4" id="td10m">
+                    <button class="copy" onclick="copyToClipboard('#td10m')">&<span>emsp13;</span></button>
+                </div>
+                <div class="spaces-table_col-5" id="td10u">
+                    <button class="copy" onclick="copyToClipboard('#td10u')">\u2004</button>
+                </div>
+                <div class="spaces-table_col-6">
+                    1/3 кегля. Ближе других к&nbsp;обычному пробелу.
+                </div>
+
+                <div class="spaces-table_col-2">
+                    <button class="copy" onclick="copyToClipboard('#st11')">En<strong id="st11">&#8194;</strong>Space</button>
+                </div>
+                <div class="spaces-table_col-3" id="td11">
+                    <button class="copy" onclick="copyToClipboard('#td11')">&<span>#8194;</span></button>
+                </div>
+                <div class="spaces-table_col-4" id="td11m">
+                    <button class="copy" onclick="copyToClipboard('#td11m')">&<span>ensp;</span></button>
+                </div>
+                <div class="spaces-table_col-5" id="td11u">
+                    <button class="copy" onclick="copyToClipboard('#td11u')">\u2002</button>
+                </div>
+                <div class="spaces-table_col-6">
+                    1/2 кегля.
+                </div>
+
+                <div class="spaces-table_col-2">
+                    <button class="copy" onclick="copyToClipboard('#st12')">Em<strong id="st12">&#8195;</strong>Space</button>
+                </div>
+                <div class="spaces-table_col-3" id="td12">
+                    <button class="copy" onclick="copyToClipboard('#td12')">&<span>#8195;</span></button>
+                </div>
+                <div class="spaces-table_col-4" id="td12m">
+                    <button class="copy" onclick="copyToClipboard('#td12m')">&<span>emsp;</span></button>
+                </div>
+                <div class="spaces-table_col-5" id="td12u">
+                    <button class="copy" onclick="copyToClipboard('#td12u')">\u2003</button>
+                </div>
+                <div class="spaces-table_col-6">
+                    Шириной с&nbsp;кегль шрифта.
+                </div>
+
+
+                <div class="category">
+                    К цифрам
+                </div>
+
+                <div class="spaces-table_col-2">
+                    <button class="copy" onclick="copyToClipboard('#st13')">Medium Mathematical<strong id="st13">&#8287;</strong>Space</button>
+                </div>
+                <div class="spaces-table_col-3" id="td13">
+                    <button class="copy" onclick="copyToClipboard('#td13')">&<span>#8287;</span></button>
+                </div>
+                <div class="spaces-table_col-4" id="td13m">
+                    <button class="copy" onclick="copyToClipboard('#td13m')">&<span>MediumSpace;</span></button>
+                </div>
+                <div class="spaces-table_col-5" id="td13u">
+                    <button class="copy" onclick="copyToClipboard('#td13u')">\u205F</button>
+                </div>
+                <div class="spaces-table_col-6">
+                    4/18 кегля. Применяют в&nbsp;математических формулах.
+                </div>
+
+                <div class="spaces-table_col-1">→</div>
+                <div class="spaces-table_col-2">
+                    <button class="copy" onclick="copyToClipboard('#st14')">Figure<strong id="st14">&#8199;</strong>Space</button>
+                </div>
+                <div class="spaces-table_col-3" id="td14">
+                    <button class="copy" onclick="copyToClipboard('#td14')">&<span>#8199;</span></button>
+                </div>
+                <div class="spaces-table_col-4" id="td14m">
+                    <button class="copy" onclick="copyToClipboard('#td14m')">&<span>numsp;</span></button>
+                </div>
+                <div class="spaces-table_col-5" id="td14u">
+                    <button class="copy" onclick="copyToClipboard('#td14u')">\u2007</button>
+                </div>
+                <div class="spaces-table_col-6">
+                    Шириной с&nbsp;цифру. Используют в&nbsp;наборе таблиц.
+                </div>
+
+
+                <div class="category">
+                    Экзотика
+                </div>
+
+                <div class="spaces-table_col-2">
+                    <button class="copy" onclick="copyToClipboard('#st15')">Punctuation<strong id="st15">&#8200;</strong>Space</button>
+                </div>
+                <div class="spaces-table_col-3" id="td15">
+                    <button class="copy" onclick="copyToClipboard('#td15')">&<span>#8200;</span></button>
+                </div>
+                <div class="spaces-table_col-4" id="td15m">
+                    <button class="copy" onclick="copyToClipboard('#td15m')">&<span>puncsp;</span></button>
+                </div>
+                <div class="spaces-table_col-5" id="td15u">
+                    <button class="copy" onclick="copyToClipboard('#td15u')">\u2008</button>
+                </div>
+                <div class="spaces-table_col-6">
+                    Шириной с&nbsp;точку.
+                </div>
+
+                <div class="spaces-table_col-2">
+                    <button class="copy" onclick="copyToClipboard('#st16')">Ideographic<strong id="st16">&#12288;</strong>Space</button>
+                </div>
+                <div class="spaces-table_col-3" id="td16">
+                    <button class="copy" onclick="copyToClipboard('#td16')">&<span>#12288;</span></button>
+                </div>
+                <div class="spaces-table_col-5" id="td16u">
+                    <button class="copy" onclick="copyToClipboard('#td16u')">\u3000</button>
+                </div>
+                <div class="spaces-table_col-6">
+                    Шириной с&nbsp;иероглиф. Используется в&nbsp;восточных языках.
+                </div>
+        </div>
+        <script type="text/javascript">
+        function copyToClipboard(element) {
+            var $temp = $("<input>");
+            $("body").append($temp);
+            $temp.val($(element).text()).select();
+            document.execCommand("copy");
+            $temp.remove();
+          }
+        </script>
+	</body>
+</html>
