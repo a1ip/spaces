@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
-	<head>
+  <head>
     <title>Пробелы</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" type="text/css" href="main.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -54,7 +54,7 @@
 
                 <div class="spaces-table_col-1">→</div>
                 <div class="spaces-table_col-2">
-                    <button class="copy" onclick="copyToClipboard('#st1')">Word <strong id="st19">&#8288;</strong>Joiner</button>
+                    <button class="copy" onclick="copyToClipboard('#st19')">Word <strong id="st19">&#8288;</strong>Joiner</button>
                 </div>
                 <div class="spaces-table_col-3" id="td1">
                     <button class="copy" onclick="copyToClipboard('#td1')">&<span>#8288;</span></button>
@@ -309,12 +309,12 @@
         </div>
         <script type="text/javascript">
         function copyToClipboard(element) {
-            var $temp = $("<input>");
+            let $temp = $("<input>");
             $("body").append($temp);
             $temp.val($(element).text()).select();
             document.execCommand("copy");
             $temp.remove();
-          }
+        }
         </script>
 	</body>
 </html>
