@@ -1,31 +1,3 @@
-@font-face {
-    font-family: Suisse Intl;
-    src: url(fonts/SuisseIntl-Book-WebXL.ttf);
-    src: url(fonts/SuisseIntl-Book-WebXL.woff);
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: Suisse Intl;
-    src: url(fonts/SuisseIntl-Bold-WebXL.ttf);
-    src: url(fonts/SuisseIntl-Bold-WebXL.woff);
-    font-weight: bold;
-}
-
-@font-face {
-    font-family: Junicode Condensed;
-    src: url(fonts/junicode-regularcondensed-webfont.ttf);
-    src: url(fonts/junicode-regularcondensed-webfont.woff);
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: Junicode;
-    src: url(fonts/junicode-regular-webfont.ttf);
-    src: url(fonts/junicode-regular-webfont.woff);
-    font-weight: normal;
-}
-
 :root{
     --x: 2rem;
     --x0_33: calc(var(--x) / 3);
@@ -58,7 +30,7 @@ body{
     -webkit-overflow-scrolling: touch;
     background-color: #e9e9e9;
     color: black;
-    font-family: 'Suisse Intl', 'Helvetica Neue', 'Arial', sans-serif;
+    font-family: 'Helvetica Neue', 'Arial', sans-serif;
     font-size: var(--x);
     font-smoothing: antialiased;
     -webkit-font-smoothing: antialiased;
@@ -104,7 +76,7 @@ p + div{
 }
 
 h1, .email_footer a{
-    font-family: 'Junicode Condensed', serif;
+    font-family: serif;
     font-weight: normal;
     font-size: var(--x2);
     letter-spacing: -.1rem;
@@ -116,7 +88,7 @@ h1, .email_footer a{
 }
 
 .highlight{
-    font-family: 'Junicode', serif;
+    font-family: serif;
 }
 
 
@@ -599,7 +571,7 @@ body{
 }
 
 h1{
-    font-family: 'Suisse Intl', 'Helvetica Neue', 'Arial', sans-serif;
+    font-family: 'Helvetica Neue', 'Arial', sans-serif;
     font-weight: bold;
     font-size: var(--y3);
     padding: var(--y0_2) var(--x0_5) 0;
